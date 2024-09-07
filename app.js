@@ -1,22 +1,41 @@
 
 function pesquisar() {
-    console.log('clicou')
+    
 
     let section = document.getElementById("resultados-pesquisa")
 
-let resultados = ""
+    let campoPesquisa = document.getElementById("campo-pesquisa").value
+
+    if (campoPesquisa == ""){
+        section.innerHTML = "<p style='color: white;'> Nada Encontrado <p>"
+        return
+    }
+
+    campoPesquisa = campoPesquisa.toLowerCase()
+
+    let resultados = "";
+    let titulo = "";
+    let descricao = "";
 
 for (let dado of dados) {
+    titulo = dado.titulo.toLowerCase()
+    descricao = dado.descricao.toLowerCase()
 
-    resultados += `<div class="item-resultado">
-                    <h2>
-                        <a href="https://www.youtube.com/watch?v=gX-B3HMlMfY" target="_blank">${dado.titulo}</a>
-                    </h2>
-                    <img src="${dado.imagem}" class="heroi" alt="Superman">
-                    <p class="descricao-meta">${dado.descrição}</p>
-                    <a href="${dado.link}" target="_blank">Mais imformações</a>
-                </div>
-                 `
+    if(titulo.includes(campoPesquisa) || descricao.includes(campoPesquisa)){
+
+        resultados += `<div class="item-resultado">
+        <h2>
+            <a href="https://www.youtube.com/watch?v=gX-B3HMlMfY" target="_blank">${titulo}</a>
+        </h2>
+        <img src="${dado.imagem}" class="heroi" alt="Superman">
+        <p class="descricao-meta">${descricao}</p>
+        <a href="${dado.link}" target="_blank">Mais informações</a>
+    </div>
+     `;
+
+    }
+
+
 }
  
 section.innerHTML = resultados
