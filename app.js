@@ -16,16 +16,18 @@ function pesquisar() {
     let resultados = "";
     let titulo = "";
     let descricao = "";
+    let tags = "";
 
 for (let dado of dados) {
     titulo = dado.titulo.toLowerCase()
     descricao = dado.descricao.toLowerCase()
+    tags = dado.tags.toLocaleLowerCase()
 
-    if(titulo.includes(campoPesquisa) || descricao.includes(campoPesquisa)){
+    if(titulo.includes(campoPesquisa) || descricao.includes(campoPesquisa) || tags.includes(campoPesquisa)){
 
         resultados += `<div class="item-resultado">
         <h2>
-            <a href="https://www.youtube.com/watch?v=gX-B3HMlMfY" target="_blank">${titulo}</a>
+            <a href="#">${titulo}</a>
         </h2>
         <img src="${dado.imagem}" class="heroi" alt="Superman">
         <p class="descricao-meta">${descricao}</p>
@@ -40,4 +42,3 @@ for (let dado of dados) {
  
 section.innerHTML = resultados
 }
-
