@@ -4,7 +4,7 @@ let dados = [
         imagem: "https://upload.wikimedia.org/wikipedia/pt/thumb/b/be/Super-Homem.jpg/250px-Super-Homem.jpg",
         descricao: "O Superman é um alienígena de Krypton, enviado para a Terra antes da destruição de seu planeta. Criado como Clark Kent, ele possui superpoderes como força, velocidade e voo. Trabalhando como jornalista, ele utiliza suas habilidades para proteger a humanidade como o super-herói Superman, representando os valores de justiça e esperança.",
         link: "https://pt.wikipedia.org/wiki/Superman",
-        tags: "kripton kriptonita força clark kent visao de raio-x lex luthor  "
+        tags: "kripton, força, clark kent, visao de raio-x, lex luthor"
     },
     {
         titulo: "Homem de Ferro",
@@ -69,13 +69,6 @@ let dados = [
         descricao: "Prima de Bruce Banner, Jennifer Walters se transformou na Mulher-Hulk após uma transfusão de sangue. Com força sobre-humana e um fator de cura acelerado, ela é uma advogada que usa seus poderes para defender os injustiçados.",
         link: "https://pt.wikipedia.org/wiki/Mulher-Hulk",
         tags:" hulk huk ruk mulher forte verde prima do hulk"
-      },
-      {
-        titulo: "Visão",
-        imagem: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/New_York_Comic_Con_2015_-_The_Vision_%2821916157810%29.jpg/375px-New_York_Comic_Con_2015_-_The_Vision_%2821916157810%29.jpg",
-        descricao: "Criado por Ultron, a Visão é um androide com densidade variável e capacidade de voar. Ele é membro dos Vingadores e busca entender a humanidade.",
-        link: "https://pt.wikipedia.org/wiki/Visão_(Marvel_Comics)",
-        tags: "androide vingadores ultron densidade variável inteligência artificial"
       },
       {
         titulo: "Capitã Marvel",
