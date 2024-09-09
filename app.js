@@ -4,10 +4,10 @@ function pesquisar() {
 
     let section = document.getElementById("resultados-pesquisa")
 
-    let campoPesquisa = document.getElementById("campo-pesquisa").value
+    let campoPesquisa = document.getElementById("campo-pesquisa").value.trim();
 
-    if (campoPesquisa == ""){
-        section.innerHTML = "<p style='color: white;'> Nada Encontrado <p>"
+    if (campoPesquisa === "" || !título.includes(campoPesquisa)|| descricao.includes(campoPesquisa) || tags.includes(campoPesquisa){
+        section.innerHTML = "<p style='color: white;'> Nada Encontrado, tente novamente<p>"
         return
     }
 
