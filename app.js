@@ -6,7 +6,7 @@ function pesquisar() {
 
     let campoPesquisa = document.getElementById("campo-pesquisa").value.trim();
 
-    if (campoPesquisa === "" || !título.includes(campoPesquisa)|| descricao.includes(campoPesquisa) || tags.includes(campoPesquisa){
+    if (campoPesquisa == "" || !título.includes(campoPesquisa)|| !descricao.includes(campoPesquisa) || !tags.includes(campoPesquisa){
         section.innerHTML = "<p style='color: white;'> Nada Encontrado, tente novamente<p>"
         return
     }
