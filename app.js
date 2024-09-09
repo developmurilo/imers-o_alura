@@ -6,11 +6,6 @@ function pesquisar() {
 
     let campoPesquisa = document.getElementById("campo-pesquisa").value.trim();
 
-    if (campoPesquisa == "" || !título.includes(campoPesquisa)|| !descricao.includes(campoPesquisa) || !tags.includes(campoPesquisa){
-        section.innerHTML = "<p style='color: white;'> Nada Encontrado, tente novamente<p>"
-        return
-    }
-
     campoPesquisa = campoPesquisa.toLowerCase()
 
     let resultados = "";
@@ -18,6 +13,10 @@ function pesquisar() {
     let descricao = "";
     let tags = "";
 
+ if (campoPesquisa === "" || !dados.título.includes(campoPesquisa)|| !dads.descricao.includes(campoPesquisa) || !dados.tags.includes(campoPesquisa){
+        section.innerHTML = "<p style='color: white;'> Nada Encontrado, tente novamente<p>"
+        return
+    }
 for (let dado of dados) {
     titulo = dado.titulo.toLowerCase()
     descricao = dado.descricao.toLowerCase()
