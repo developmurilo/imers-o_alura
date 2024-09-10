@@ -79,7 +79,7 @@ let dados = [
       },
       {
         titulo: "Silvio Santos, O Rei da TV",
-        imagem: "https://upload.wikimedia.org/wikipedia/commons/8/82/Silvio_Santos_2012.jpg", 
+        imagem: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Silvio_Santos_em_maio_de_2019.jpg/440px-Silvio_Santos_em_maio_de_2019.jpg", 
         descricao: "Silvio Santos, o lendário apresentador de TV brasileiro, agora é um super-herói! Usando seu incrível poder de persuasão e uma risada inconfundível, ele luta contra o tédio e o desânimo. Sempre com dinheiro voando de seus bolsos e um microfone mágico, ele encanta e salva o mundo com prêmios inesperados. A cada 'quem quer dinheiro?', ele acende a esperança nas pessoas. Sua superforça está na sua carisma e bom humor.",
         link: "https://pt.wikipedia.org/wiki/Silvio_Santos",
         tags: "SBT, quem quer dinheiro, alegria, carisma, apresentador, risada mágica, microfone"
